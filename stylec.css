@@ -1,0 +1,252 @@
+:root{
+    --primary-color: #0A1128;
+    --white-color: #fff;
+    --gap: 3rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    padding-top: 6rem;
+}
+
+.main-bg{
+    background: url(img/mountain-night-background.svg);
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+    padding: 10rem;
+    
+}
+
+.white-bg{
+    background: var(--white-color);
+    padding: 10rem;
+}
+
+.main-content{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--gap);
+    
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 5.5rem;
+}
+
+h3{
+    font-size: 5rem;
+}
+
+h4{
+    font-size: 4.5rem;
+}
+
+h5{
+    font-size: 4rem;
+}
+
+h6{
+    font-size: 3.5rem;
+}
+
+/*SISTEMA DE NAVEGAÇÃO*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1.5rem 3rem; 
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+
+
+nav h1 a {
+    
+    margin: 0;
+    text-decoration: none;
+    color: #0A1128;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a ,nav h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0A1128;
+}
+
+.EU{
+    color: #fff;
+}
+
+
+/*IMAGENS*/
+
+.img1{
+    width: 30%;
+    height: 30%;
+}
+
+.alinhamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img2{
+    margin-left: 8rem ;
+    grid-column: 2;
+    grid-row: 2 / span 4 ;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 2rem;
+    border-color: #fff;
+    border: solid;
+}
+
+.alinhamento2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.alinhamento2 h1{
+    grid-column:1 /-2 ;
+}
+
+/*TABELAS*/
+
+table{
+    text-align: center;
+    border: 0.5px solid;
+    border-color: black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th{
+    background-color: #7b98f7;
+    border: 1px solid black;
+}
+
+table td{
+    border: 1px solid black;
+}
+
+
+/* Estilização do Container do Formulário */
+.form-container {
+  max-width: 40rem;
+  margin: 4rem auto;
+  padding: 3rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 15rem;
+}
+
+h3 {
+  margin-top: 0;
+  color: #0A1128;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+/* Organização dos Inputs empilhados */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-group input {
+  padding: 12px 14px;
+  border: 1px solid #dcdde1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+.input-group input:focus {
+  border-color: #7b98f7;
+  box-shadow: 0 0 0 3px rgba(123, 152, 247, 0.2);
+}
+
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-reset {
+  background-color: #f1f2f6;
+  color: #2f3542;
+}
+
+.btn-reset:hover {
+  background-color: #dfe4ea;
+}
